@@ -30,6 +30,24 @@ public class Main {
             //aspetta
             Thread.sleep(1000);
 
+            //accendiamo la macchina del caffè
+            invocaComando.execute("mcaffe.accendi");
+
+            //aspetta
+            Thread.sleep(1000);
+
+            //facciamo un caffè
+            invocaComando.execute("mcaffe.faicaffe");
+
+            //aspetta
+            Thread.sleep(1000);
+
+            //Spegniamo la macchinetta
+            invocaComando.execute("mcaffe.spegni");
+
+            //aspetta
+            Thread.sleep(1000);
+
 
         }
 

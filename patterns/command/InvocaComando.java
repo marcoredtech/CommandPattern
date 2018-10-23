@@ -21,6 +21,12 @@ public class InvocaComando {
         listaMessaggi.add(new ComandoLuceOff(dispositivoLuce));
         listaMessaggi.add(new ComandoLuceOn(dispositivoLuce));
 
+        // Comandi caffè
+        DispositivoMacchinaCaffe macchinaCaffe = new DispositivoMacchinaCaffe();
+        listaMessaggi.add(new ComandoAccendiMacchinaCaffe(macchinaCaffe));
+        listaMessaggi.add(new ComandoSpegniMacchinaCaffe(macchinaCaffe));
+        listaMessaggi.add(new ComandoFaiCaffe(macchinaCaffe));
+
         PrecaricaComandi();
     }
 
