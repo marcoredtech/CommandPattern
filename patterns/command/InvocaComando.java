@@ -19,6 +19,8 @@ public class InvocaComando {
         DispositivoLuce dispositivoLuce = new DispositivoLuce();
         listaMessaggi.add(new ComandoLuceOff(dispositivoLuce));
         listaMessaggi.add(new ComandoLuceOn(dispositivoLuce));
+
+        PrecaricaComandi();
     }
 
     private void PrecaricaComandi(){

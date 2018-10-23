@@ -9,10 +9,11 @@ public class ComandoLuceOn implements Imessaggi {
 
     public ComandoLuceOn(DispositivoLuce luce) {
         this.luce = luce;
+
     }
 
     @Override
-    public void execute() {
+    public void execute(DispositivoLuce luce) {
         try {
             luce.LuceAccesa();
         } catch(Exception e) {
