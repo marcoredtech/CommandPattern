@@ -7,14 +7,10 @@ public class Main {
 
 
     public static void main(String[] args) throws InterruptedException {
-         final String accendiLuce = "luci.accendi";
+         final String accendiLuce = "luce.accendi";
          final String spegniLuce = "luce.spegni";
 
         InvocaComando invocaComando = new InvocaComando();
-        //DispositivoLuce dispositivoLuce = new DispositivoLuce();
-
-        //ComandoLuceOn comandoLuceOn = new ComandoLuceOn(dispositivoLuce);
-        //ComandoLuceOff comandoLuceOff = new ComandoLuceOff(dispositivoLuce);
 
         while(true){
 

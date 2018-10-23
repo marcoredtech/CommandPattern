@@ -13,7 +13,7 @@ public class ComandoLuceOn implements Imessaggi {
     }
 
     @Override
-    public void execute(DispositivoLuce luce) {
+    public void execute() {
         try {
             luce.LuceAccesa();
         } catch(Exception e) {

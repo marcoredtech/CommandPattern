@@ -1,5 +1,6 @@
 package patterns.command;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -11,7 +12,7 @@ public class InvocaComando {
 
 
     Map<String, Imessaggi> avaibleMessage = new HashMap<String,Imessaggi>();
-    List<Imessaggi> listaMessaggi;
+    List<Imessaggi> listaMessaggi = new ArrayList<Imessaggi>();
 
 
     public InvocaComando() {
