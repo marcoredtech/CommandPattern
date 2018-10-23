@@ -19,4 +19,9 @@ public class ComandoLuceOn implements Imessaggi {
             e.printStackTrace();
         }
     }
+
+    @Override
+    public String GetAvaibleCommand() {
+        return "luce.accendi";
+    }
 }

@@ -1,17 +1,35 @@
 package patterns.command;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /**
  *  INVOKER
  */
 public class InvocaComando {
 
-    Imessaggi messaggi;
 
-    public void ImpostaComando(Imessaggi messaggi) {
-        this.messaggi = messaggi;
+    Map<String, Imessaggi> avaibleMessage = new HashMap<String,Imessaggi>();
+    List<Imessaggi> listaMessaggi;
+
+
+    public InvocaComando() {
+        // Comandi Luce
+        DispositivoLuce dispositivoLuce = new DispositivoLuce();
+        listaMessaggi.add(new ComandoLuceOff(dispositivoLuce));
+        listaMessaggi.add(new ComandoLuceOn(dispositivoLuce));
     }
 
-    public void execute(){
-        messaggi.execute();
+    private void PrecaricaComandi(){
+        for(Imessaggi m: listaMessaggi  ) {
+            avaibleMessage.put(m.GetAvaibleCommand(),m);
+        }
     }
+
+    public void execute(String incommingMessage){
+        avaibleMessage.get(incommingMessage).execute();
+    }
+
+
 }

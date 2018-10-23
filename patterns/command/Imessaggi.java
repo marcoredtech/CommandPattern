@@ -5,6 +5,6 @@ package patterns.command;
  */
 public interface Imessaggi {
 
-    public void execute();
-
+    void execute();
+    String GetAvaibleCommand();
 }

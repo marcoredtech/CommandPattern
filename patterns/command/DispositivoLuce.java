@@ -3,7 +3,7 @@ package patterns.command;
 /**
  * RECEIVER
  */
-public class DispositivoLuce {
+public class DispositivoLuce extends Dispositivi {
     private boolean statoLuce;
 
     public DispositivoLuce() {}

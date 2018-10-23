@@ -19,4 +19,9 @@ public class ComandoLuceOff implements Imessaggi {
             e.printStackTrace();
         }
     }
+
+    @Override
+    public String GetAvaibleCommand() {
+        return "luce.spegni";
+    }
 }
